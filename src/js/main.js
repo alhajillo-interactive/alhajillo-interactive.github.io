@@ -2,9 +2,9 @@ import "/src/js/arcade-scene.js";
 
 import Swiper from "swiper";
 import "swiper/css";
-import { EffectCoverflow } from "swiper/modules";
+import { EffectCoverflow, HashNavigation } from "swiper/modules";
 
-const portfolioSlider = new Swiper(".swiper.portfolio", {
+const portfolioCarousel = new Swiper(".swiper.portfolio", {
     loop: true,
     spaceBetween: 16,
     breakpoints: {
@@ -19,4 +19,22 @@ const portfolioSlider = new Swiper(".swiper.portfolio", {
     coverflowEffect: {
         slideShadows: false,
     },
+});
+
+const sectionCarousel = new Swiper(".swiper.sections", {
+    hashNavigation: {
+        watchState: true,
+    },
+    modules: [HashNavigation],
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key == "a") {
+        console.log("previous slide");
+        portfolioCarousel.slidePrev();
+    }
+    if (e.key == "d") {
+        console.log("next slide");
+        portfolioCarousel.slideNext();
+    }
 });

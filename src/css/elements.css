@@ -26,6 +26,17 @@
     }
 }
 
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    nav {
+        background: var(--primary-clr-700);
+        width: fit-content;
+        padding: 1rem;
+    }
+}
+
 .swiper-wrapper {
     padding: 0;
 }
