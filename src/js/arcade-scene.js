@@ -1,5 +1,4 @@
 import * as THREE from "three";
-import "./src/css/theme.css";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
 const scene = new THREE.Scene();

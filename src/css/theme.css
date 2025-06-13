@@ -1,12 +1,14 @@
 * {
     box-sizing: border-box;
 }
+
 :root {
     --primary-clr-100: #f0f0f0;
     --primary-clr-700: #1f2426;
     --secondary-clr-400: #f74755;
     --accent-clr-400: #8c7aab;
     --shadow-clr-700: rgba(0, 0, 0, 0.15);
+    --container-width: 78ch;
 }
 img {
     max-width: 100%;
@@ -15,6 +17,10 @@ body {
     margin: 0;
     background: var(--primary-clr-700);
     font-size: 1.2rem;
+    line-height: 1.2;
+    /* Sans-serif font stack */
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Adwaita Sans,
+        Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;
 }
 #info {
     position: absolute;
@@ -24,14 +30,39 @@ body {
     z-index: 10;
     display: block;
     color: var(--primary-clr-100);
-    padding-inline: 3rem;
+    /* padding-inline: 3rem; */
 }
 section {
-    padding-block: 6rem;
+    margin-block: 6rem;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+    /* Monospace font stack */
+    font-family: Menlo, Consolas, Monaco, Adwaita Mono, Liberation Mono, Lucida Console, monospace;
+}
+
 h2 {
     background-color: var(--secondary-clr-400);
     width: fit-content;
     padding: 0.5em 1em;
     box-shadow: var(--shadow-clr-700) -1px 3px 10px;
+    margin-bottom: 1.6em;
+}
+a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration-color: var(--secondary-clr-400);
+    text-decoration-thickness: 2px;
+}
+a:visited {
+    text-decoration-color: var(--accent-clr-400);
+    text-decoration-thickness: 3px;
+}
+.container {
+    max-width: 78ch;
+    margin-inline: auto;
+    padding-inline: 1.2rem;
 }

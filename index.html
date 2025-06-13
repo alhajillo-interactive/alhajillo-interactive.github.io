@@ -2,74 +2,141 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>My first three.js app</title>
+        <title>Alhajillo Interactive</title>
+        <link rel="stylesheet" href="/src/css/app.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
-        <script type="module" src="/main.js"></script>
+        <script type="module" src="/src/js/main.js"></script>
         <div id="info">
             <section id="hero">
-                <h1>Alhajillo Interactivo</h1>
-                <a href="">Contact us</a>
+                <div class="container">
+                    <h1>Alhajillo Interactive</h1>
+                    <nav>
+                        <a href="#about">studio</a>
+                        <a href="#portfolio">projects</a>
+                        <a href="#contact-us">contact</a>
+                    </nav>
+                </div>
             </section>
             <section id="about">
-                <h2>About Us</h2>
-                <p>
-                    We are a small studio focused on developing interactive experiences thought technology, especially
-                    using websites and video-games as tools to unleash our creativity
-                </p>
-                <h3>Team</h3>
-                <ul>
-                    <li>
-                        <h4>Bryan</h4>
-                    </li>
-                    <li>
-                        <h4>Isma</h4>
-                    </li>
-                    <li>
-                        <h4>Serghy</h4>
-                    </li>
-                </ul>
-                <h3>Our studio</h3>
-                <p>
-                    We want to enable companies and individuals to showcase their creativity and explore new ways to
-                    engage with content
-                </p>
-                <p>Video games development: to unleash our ideas or create learning opportunities</p>
-                <p>Websites: to showcase any idea in a new way</p>
-                <p>Finalists in the GameJam+ 2024 -> Brasilia</p>
+                <div class="container">
+                    <h2>About us</h2>
+                    <p>
+                        We are a small studio focused on developing interactive experiences thought technology,
+                        especially using websites and video-games as tools to unleash our creativity
+                    </p>
+                    <h3>Team</h3>
+                    <ul>
+                        <li>
+                            <h4>Bryan</h4>
+                        </li>
+                        <li>
+                            <h4>Isma</h4>
+                        </li>
+                        <li>
+                            <h4>Serghy</h4>
+                        </li>
+                    </ul>
+                    <h3>Our studio</h3>
+                    <p>
+                        We want to enable companies and individuals to showcase their creativity and explore new ways to
+                        engage with content
+                    </p>
+                    <p>Video games development: to unleash our ideas or create learning opportunities</p>
+                    <p>Websites: to showcase any idea in a new way</p>
+                    <p>Finalists in the GameJam+ 2024 -> Brasilia</p>
+                </div>
             </section>
             <section id="services">
-                <h2>Services</h2>
-                <ul>
-                    <li>Game development (2D, 3D, mobile, PC, console)</li>
-                    <li>Art and animation services</li>
-                    <li>Game design consultation</li>
-                    <li>Interactive websites development</li>
-                    <li>Virtual/augmented reality development</li>
-                </ul>
+                <div class="container">
+                    <h2>Services</h2>
+                    <ul>
+                        <li>Game development (2D, 3D, mobile, PC, console)</li>
+                        <li>Art and animation services</li>
+                        <li>Game design consultation</li>
+                        <li>Interactive websites development</li>
+                        <li>Virtual/augmented reality development</li>
+                    </ul>
+                </div>
             </section>
             <section id="portfolio">
-                <h2>Portfolio</h2>
-                <ul>
-                    <li>
-                        <h3>MemoryRoots</h3>
-                        <img src="./public/img/memory-roots.png" alt="MemoryRoots Image" />
-                        <p>Description</p>
-                        <a href="https://toka404.itch.io/memory-roots">See itch.io page</a>
-                    </li>
-                    <li>
-                        <h3>CapybaraIsland</h3>
-                        <img src="/public/img/capybara-island.jpg" alt="CapybaraIsland Image" />
-                        <p>Description</p>
-                        <a href="https://toka404.itch.io/capybara-island">See itch.io page</a>
-                    </li>
-                    <li>
-                        <h3>Interactive Photoboot</h3>
-                        <img src="/public/img/interactive-photo-booth.png" alt="Interactive Photobooth Image" />
-                        <p>Description</p>
-                        <a href="https://interactive-photo-booth.netlify.app/">See live page</a>
-                    </li>
-                </ul>
+                <div class="container">
+                    <h2>Portfolio</h2>
+                </div>
+                <div class="swiper portfolio">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide project-card">
+                            <h3>MemoryRoots</h3>
+                            <img src="./public/img/memory-roots.png" alt="MemoryRoots Image" />
+                            <p>
+                                Don Lucho wonders across his own mind, searching for fragments of his family's memories
+                                while running from for oblivion
+                            </p>
+                            <a target="_blank" href="https://toka404.itch.io/memory-roots">See itch.io page</a>
+                        </li>
+                        <li class="swiper-slide project-card">
+                            <h3>CapybaraIsland</h3>
+                            <img src="/public/img/capybara-island.jpg" alt="CapybaraIsland Image" />
+                            <p>
+                                Explore this unique island, decorate and have fun with your Capybara friends. This
+                                clicker game is all about collecting love and developing your island while accomplishing
+                                missions and admiring the cute animals
+                            </p>
+                            <a target="_blank" href="https://toka404.itch.io/capybara-island">See itch.io page</a>
+                        </li>
+                        <li class="swiper-slide project-card">
+                            <h3>Interactive Photoboot</h3>
+                            <img src="/public/img/interactive-photo-booth.png" alt="Interactive Photobooth Image" />
+                            <p>
+                                Do you want to take a picture with effects, this website allows you to create photobooth
+                                images with multiple effects. It also explores the interaction using hand tracking
+                            </p>
+                            <a target="_blank" href="https://interactive-photo-booth.netlify.app/">See live page</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="contact-us">
+                <div class="container">
+                    <h2 class="title">Contact us</h2>
+                    <p>
+                        We would love to hear from you! <br />
+                        Contact us about our services or any other interactive endeavor
+                    </p>
+                    <address>
+                        <dl>
+                            <dt>instagram:</dt>
+                            <dd>
+                                <a href="https://www.instagram.com/alhajillo.interactive/">@alhajillo.interactive</a>
+                            </dd>
+                            <dt>email:</dt>
+                            <dd>
+                                <a href="mailto:alhajillo.interactivo@gmail.com">alhajillo.interactivo@gmail.com</a>
+                            </dd>
+                            <dt>based in</dt>
+                            <dd>UIO --> Quito, Ecuador</dd>
+                        </dl>
+                    </address>
+                    <br />
+                    <hr />
+                    <br />
+                    <form action="https://formsubmit.co/7e07c8bec78548312c9d900260a4cda1" method="POST">
+                        <label for="name">
+                            Name:
+                            <input type="text" name="name" required />
+                        </label>
+                        <label for="email">
+                            Email:
+                            <input type="email" name="email" required />
+                        </label>
+                        <textarea name="message" id="message" placeholder="Your message here" rows="3"></textarea>
+                        <input type="hidden" name="_next" value="https://alhajillo-interactive.github.io/" />
+                        <button type="submit">Send Message</button>
+                    </form>
+                    <br />
+                    <hr />
+                </div>
             </section>
         </div>
     </body>
