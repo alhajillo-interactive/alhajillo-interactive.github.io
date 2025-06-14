@@ -1,6 +1,7 @@
 import CameraControls from "camera-controls";
 import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { CSS3DRenderer, CSS3DObject } from "three/addons/renderers/CSS3DRenderer.js";
 
 //setup scene
 const scene = new THREE.Scene();
@@ -8,8 +9,42 @@ scene.background = new THREE.Color("#1f2426");
 const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
 const canvas = document.getElementById("c");
 const renderer = new THREE.WebGLRenderer({ antialias: true, canvas: canvas });
-// renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.shadowMap.enabled = true;
+
+// dom renderer
+const dom3D = document.getElementById("dom-3D");
+const domRenderer = new CSS3DRenderer({ element: dom3D });
+domRenderer.setSize(canvas.clientWidth, canvas.clientHeight);
+
+const arcadeScreen = document.createElement("div");
+// arcadeScreen.style.height = "1px";
+// arcadeScreen.style.width = "1.5px";
+// arcadeScreen.style.background = "red";
+// arcadeScreen.style.display = "flex";
+// arcadeScreen.style.fontSize = "0.1px";
+const nextBtn = document.createElement("button");
+nextBtn.textContent = "next";
+nextBtn.addEventListener("click", () => {
+    window.portfolioCarousel.slideNext();
+});
+const prevBtn = document.createElement("button");
+prevBtn.textContent = "prev";
+prevBtn.addEventListener("click", () => {
+    window.portfolioCarousel.slidePrev();
+});
+const instagramBTN = document.createElement("a");
+instagramBTN.textContent = "instagram";
+instagramBTN.href = "https://www.instagram.com/alhajillo.interactive/";
+// instagramBTN.style.fontSize = "1rem";
+instagramBTN.target = "_blank";
+arcadeScreen.appendChild(instagramBTN);
+arcadeScreen.appendChild(prevBtn);
+arcadeScreen.appendChild(nextBtn);
+const test3dObject = new CSS3DObject(arcadeScreen);
+scene.add(test3dObject);
+test3dObject.position.set(-3.6, 4, 1.6);
+test3dObject.rotation.set(0, -Math.PI * 0.25, 0);
+// test3dObject.scale.set(1);
 
 // controls
 camera.position.set(0, 4, 10);
@@ -57,6 +92,8 @@ loader.load(
             children.castShadow = true;
         });
         scene.add(gltf.scene);
+        // const s = 100;
+        // gltf.scene.scale.set(s, s, s);
     },
     undefined,
     function (error) {
@@ -71,9 +108,11 @@ function loop() {
         const canvas = renderer.domElement;
         camera.aspect = canvas.clientWidth / canvas.clientHeight;
         camera.updateProjectionMatrix();
+        // domRenderer.setSize(canvas.clientWidth, canvas.clientHeight);
     }
     const delta = clock.getDelta();
     controls.update(delta);
+    domRenderer.render(scene, camera);
     renderer.render(scene, camera);
 }
 renderer.setAnimationLoop(loop);
@@ -102,7 +141,7 @@ function focusArcadeMachine() {
 }
 function returnToFreeOrbit() {
     controls.setTarget(0, 6, 0, true);
-    controls.dollyTo(10, true);
+    controls.dollyTo(100, true);
     controls.enabled = true;
 }
 document.addEventListener("keydown", (e) => {
@@ -110,9 +149,7 @@ document.addEventListener("keydown", (e) => {
         returnToFreeOrbit();
     }
     if (e.key == "e") {
+        location.hash = "#portfolio";
         focusArcadeMachine();
     }
-});
-controls.addEventListener("controlstart", (e) => {
-    console.log(e);
 });

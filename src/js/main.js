@@ -20,6 +20,7 @@ const portfolioCarousel = new Swiper(".swiper.portfolio", {
         slideShadows: false,
     },
 });
+window.portfolioCarousel = portfolioCarousel;
 
 const sectionCarousel = new Swiper(".swiper.sections", {
     hashNavigation: {
