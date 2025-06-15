@@ -30,9 +30,11 @@
     position: sticky;
     top: 0;
     z-index: 10;
+    pointer-events: none;
     nav {
         background: var(--primary-clr-700);
         width: fit-content;
+        /* pointer-events: initial; */
         padding: 1rem;
     }
 }

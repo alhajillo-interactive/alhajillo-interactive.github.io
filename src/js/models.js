@@ -16,6 +16,8 @@ export function LoadModels(scene) {
                 children.castShadow = true;
             });
             scene.add(gltf.scene);
+            const s = 50;
+            gltf.scene.scale.set(s, s, s);
         },
         undefined,
         function (error) {

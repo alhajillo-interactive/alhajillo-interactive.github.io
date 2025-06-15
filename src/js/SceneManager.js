@@ -4,6 +4,7 @@ import { SetupLights } from "./lights";
 import { CameraMovement } from "./CameraMovement";
 import { CSS3DRenderer } from "three/addons/renderers/CSS3DRenderer.js";
 import { ArcadeScreen } from "./ArcadeScreen";
+import { ContactButtons } from "./ContactButtons";
 
 export class SceneManager {
     constructor(canvas, dom3dElement) {
@@ -25,9 +26,9 @@ export class SceneManager {
     _setup() {
         SetupLights(this.scene);
         LoadModels(this.scene);
-        this.camera.position.set(0, 4, 10);
         this.cameraMovement = new CameraMovement(this.camera, this.renderer.domElement);
-        // this.arcadeScreen = new ArcadeScreen(this.scene);
+        this.arcadeScreen = new ArcadeScreen(this.scene);
+        this.contactButtons = new ContactButtons(this.scene);
     }
     _loop() {
         const deltaTime = this.clock.getDelta();

@@ -17,8 +17,8 @@ CameraControls.install({ THREE: subsetOfTHREE });
 
 export class CameraMovement {
     constructor(camera, domElement) {
-        this.orbitTarget = { x: 0, y: 3, z: 0 };
-        this.orbitDistance = 20;
+        this.orbitTarget = { x: 0, y: 3 * 50, z: 0 };
+        this.orbitDistance = 700;
 
         this.controls = new CameraControls(camera, domElement);
         // setup input
@@ -31,6 +31,7 @@ export class CameraMovement {
         this.controls.minPolarAngle = Math.PI / 8;
         this.controls.maxPolarAngle = Math.PI / 2;
 
+        this.controls.setPosition(0, 200, 500);
         this.controls.setTarget(this.orbitTarget.x, this.orbitTarget.y, this.orbitTarget.y);
         this.controls.dollyTo(this.orbitDistance);
     }
@@ -38,7 +39,8 @@ export class CameraMovement {
         this.controls.update(deltaTime);
     }
     focusOnArcadeMachine() {
-        this.controls.setLookAt(-5, 3.88, 3, -3.5, 3.88, 1.53, true);
+        const s = 50;
+        this.controls.setLookAt(-6 * s, 4.88 * s, 4 * s, -3.5 * s, 3.38 * s, 1.53 * s, true);
         this.controls.enabled = false;
     }
     activateFreeOrbit() {
