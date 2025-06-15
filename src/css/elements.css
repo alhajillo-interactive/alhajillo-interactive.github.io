@@ -32,13 +32,28 @@
     z-index: 10;
     pointer-events: none;
     nav {
-        background: var(--primary-clr-700);
+        background: var(--primary-clr-100);
+        color: var(--primary-clr-700);
         width: fit-content;
         /* pointer-events: initial; */
         padding: 1rem;
+        display: flex;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px 0px rgba(209, 197, 197, 0.685);
+    }
+    a {
+        padding: 0.1rem 0.5rem;
+        text-decoration-color: var(--accent-clr-400);
+        display: block;
+        transition: all 500ms ease-out;
+        position: relative;
+    }
+    .active {
+        text-decoration-color: red;
+        text-decoration-color: var(--secondary-clr-400);
+        transform: translateY(-6px);
     }
 }
-
 .swiper-wrapper {
     padding: 0;
 }

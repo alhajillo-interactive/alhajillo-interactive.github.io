@@ -1,4 +1,4 @@
-import { AmbientLight, DirectionalLight, Scene } from "three";
+import { AmbientLight, CameraHelper, DirectionalLight, Scene } from "three";
 
 export function SetupLights(scene) {
     const ambientLight = new AmbientLight(0xffffff, 0.5);
@@ -8,16 +8,17 @@ export function SetupLights(scene) {
 }
 function ConfigureDirectionalLight() {
     const light = new DirectionalLight(0xffffff, 5);
-    light.position.set(3, 5, 5);
+    const s = 50;
+    light.position.set(3 * s, 5 * s, 5 * s);
     light.castShadow = true;
     // configure shadow
     light.shadow.camera.near = 1;
-    light.shadow.camera.far = 25;
-    light.shadow.camera.left = -10;
-    light.shadow.camera.right = 10;
-    light.shadow.camera.top = 10;
-    light.shadow.camera.bottom = -5;
+    light.shadow.camera.far = 25 * s;
+    light.shadow.camera.left = -5 * s;
+    light.shadow.camera.right = 5 * s;
+    light.shadow.camera.top = 6 * s;
+    light.shadow.camera.bottom = -2 * s;
     light.shadow.radius = 4;
-    light.shadow.blurSamples = 25;
+    light.shadow.blurSamples = 3;
     return light;
 }

@@ -12,7 +12,7 @@ export class SceneManager {
         this.scene.background = new Color("#1f2426");
         // camera
         const fov = 45;
-        this.camera = new PerspectiveCamera(fov, window.innerWidth / window.innerHeight, 0.1, 1000);
+        this.camera = new PerspectiveCamera(fov, window.innerWidth / window.innerHeight, 0.1, 2000);
         // renderer
         this.renderer = new WebGLRenderer({ antialias: true, canvas: canvas });
         this.renderer.shadowMap.enabled = true;
