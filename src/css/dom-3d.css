@@ -16,6 +16,7 @@
     flex-direction: column;
     gap: 1rem;
     font-size: 14px;
+    color: var(--primary-clr-100);
 }
 .contact-buttons a {
     transition: scale 250ms ease;
