@@ -1,7 +1,6 @@
 export class Navigation {
     constructor(element) {
         this.links = element.querySelectorAll("a");
-        this.update(location.hash);
     }
     update(hash) {
         let foundActive = false;

@@ -15,6 +15,8 @@ const navigation = new Navigation(navbar);
 document.addEventListener("keydown", (e) => {
     threeJSScene.onKeyDown(e.key);
 });
+threeJSScene.onHashChange(location.hash);
+navigation.update(location.hash);
 window.addEventListener("hashchange", (e) => {
     threeJSScene.onHashChange(location.hash);
     navigation.update(location.hash);
