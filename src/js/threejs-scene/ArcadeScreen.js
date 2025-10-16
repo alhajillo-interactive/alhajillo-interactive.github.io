@@ -1,5 +1,5 @@
 import { CSS3DObject } from "three/addons/renderers/CSS3DRenderer.js";
-import { PortfolioCarousel } from "./carousels";
+import { PortfolioCarousel } from "../carousels";
 export class ArcadeScreen {
     constructor(scene) {
         const s = 50;

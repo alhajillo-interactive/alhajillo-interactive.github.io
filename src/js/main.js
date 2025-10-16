@@ -1,6 +1,6 @@
 import { initCarousels } from "./carousels";
 import { Navigation } from "./Navigation";
-import { SceneManager } from "./SceneManager";
+import { SceneManager } from "./threejs-scene/SceneManager";
 
 initCarousels();
 
