@@ -1,0 +1,14 @@
+{
+    "title": {
+        "en": "Hello",
+        "es": "Hola"
+    },
+    "about": {
+        "en": {
+            "test": "Test from about .json"
+        },
+        "es": {
+            "test": "Preba desde  about .json"
+        }
+    }
+}

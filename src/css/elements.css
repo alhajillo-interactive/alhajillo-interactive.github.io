@@ -57,3 +57,23 @@
 .swiper-wrapper {
     padding: 0;
 }
+
+.language-picker {
+    position: fixed;
+    top: 0;
+    right: 20%;
+    margin-top: 1rem;
+
+    label {
+        display: none;
+    }
+    select {
+        background: var(--primary-clr-100);
+        color: var(--primary-clr-700);
+        border: none;
+        border-radius: 5px;
+        padding: 0.25rem 0.5rem;
+        font-weight: bold;
+        box-shadow: 0px 2px 5px 0px rgba(209, 197, 197, 0.685);
+    }
+}

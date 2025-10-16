@@ -1,4 +1,4 @@
 {
     "template": "layouts/home-page.njk",
-    "title": "ES page test"
+    "locale": "es"
 }
