@@ -1,0 +1,28 @@
+{
+    "contact": {
+        "en": {
+            "title": "Contact us",
+            "tagline": "We would love to hear from you!",
+            "description": "Contact us about our services or any other interactive task",
+            "based": "based in:",
+            "form": {
+                "name": "Name",
+                "email": "Email",
+                "msg_placeholder": "Your message here",
+                "send_btn": "Send Message"
+            }
+        },
+        "es": {
+            "title": "Contacta con nosotros",
+            "tagline": "Nos encantaría hablar con usted!",
+            "description": "Comunicate con nosotros sobre nuestros servicios o cualquier otra tarea interactiva",
+            "based": "desde:",
+            "form": {
+                "name": "Nombre",
+                "email": "Email",
+                "msg_placeholder": "Su mensaje aquí",
+                "send_btn": "Enviar mensaje"
+            }
+        }
+    }
+}

@@ -5,7 +5,6 @@ export class Navigation {
     update(hash) {
         let foundActive = false;
         this.links.forEach((link) => {
-            console.log("update", hash, link.hash);
             if (link.hash == hash) {
                 foundActive = true;
                 link.classList.add("active");

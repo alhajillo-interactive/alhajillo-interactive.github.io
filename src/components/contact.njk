@@ -1,0 +1,49 @@
+{% set data = contact[locale]%}
+<div class="container">
+    <h2 class="title">{{ data.title }}</h2>
+    <p>
+        {{ data.tagline}}
+        <br>
+        {{ data.description }}
+    </p>
+    <address>
+        <dl>
+            <dt>instagram:</dt>
+            <dd>
+                <a href="https://www.instagram.com/alhajillo.interactive/"
+                    >@alhajillo.interactive</a
+                >
+            </dd>
+            <dt>email:</dt>
+            <dd>
+                <a href="mailto:alhajillo.interactivo@gmail.com"
+                    >alhajillo.interactivo@gmail.com</a
+                >
+            </dd>
+            <dt>{{data.based}}</dt>
+            <dd>UIO --> Quito, Ecuador</dd>
+        </dl>
+    </address>
+    <br />
+    <hr />
+    <br />
+    <form action="https://formsubmit.co/alhajillo.interactivo@gmail.com" method="POST">
+        <label for="name">
+            {{ data.form.name }}:
+            <input type="text" name="name" required />
+        </label>
+        <label for="email">
+            {{data.form.email}}:
+            <input type="email" name="email" required />
+        </label>
+        <textarea
+            name="message"
+            id="message"
+            placeholder="{{data.form.msg_placeholder}}"
+            rows="3"></textarea>
+        <input type="hidden" name="_next" value="https://alhajillo-interactive.github.io/" />
+        <button type="submit">{{ data.form.send_btn }}</button>
+    </form>
+    <br />
+    <hr />
+</div>

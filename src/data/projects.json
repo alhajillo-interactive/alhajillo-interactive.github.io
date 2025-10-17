@@ -1,0 +1,72 @@
+{
+    "projects": {
+        "en": [
+            {
+                "title": "MemoryRoots",
+                "img": "/img/memory-roots.png",
+                "img_alt": "MemoryRoots Image",
+                "description": "Don Lucho wonders across his own mind, searching for fragments of his family'smemories while running from for oblivion",
+                "btn_href": "https://toka404.itch.io/memory-roots",
+                "btn_text": "See itch.io page"
+            },
+            {
+                "title": "CapybaraIsland",
+                "img": "/img/capybara-island.jpg",
+                "img_alt": "CapybaraIsland Image",
+                "description": "Explore this unique island, decorate and have fun with your Capybara friends. This clicker game is all about collecting love and developing your island while accomplishing missions and admiring the cute animals",
+                "btn_href": "https://toka404.itch.io/capybara-island",
+                "btn_text": "See itch.io page"
+            },
+            {
+                "title": "Interactive Photoboot",
+                "img": "/img/interactive-photo-booth.png",
+                "img_alt": "Interactive Photobooth Image",
+                "description": "Do you want to take a picture with effects, this website allows you to create photobooth images with multiple effects. It also explores the interaction using hand tracking",
+                "btn_href": "https://interactive-photo-booth.netlify.app/",
+                "btn_text": "See live page"
+            },
+            {
+                "title": "Supaykuna",
+                "img": "/img/supaykuna.png",
+                "img_alt": "Supaykuna Image",
+                "description": "Beat 'em up 2D adventure with pixel art that will take you to the Andean mythology and magical towns to collect kamaquen",
+                "btn_href": "https://toka404.itch.io/supaykuna",
+                "btn_text": "See itch.io page"
+            }
+        ],
+        "es": [
+            {
+                "title": "MemoryRoots",
+                "img": "/img/memory-roots.png",
+                "img_alt": "MemoryRoots Image",
+                "description": "Don Lucho wonders across his own mind, searching for fragments of his family'smemories while running from for oblivion",
+                "btn_href": "https://toka404.itch.io/memory-roots",
+                "btn_text": "See itch.io page"
+            },
+            {
+                "title": "CapybaraIsland",
+                "img": "/img/capybara-island.jpg",
+                "img_alt": "CapybaraIsland Image",
+                "description": "Explore this unique island, decorate and have fun with your Capybara friends. This clicker game is all about collecting love and developing your island while accomplishing missions and admiring the cute animals",
+                "btn_href": "https://toka404.itch.io/capybara-island",
+                "btn_text": "See itch.io page"
+            },
+            {
+                "title": "Interactive Photoboot",
+                "img": "/img/interactive-photo-booth.png",
+                "img_alt": "Interactive Photobooth Image",
+                "description": "Do you want to take a picture with effects, this website allows you to create photobooth images with multiple effects. It also explores the interaction using hand tracking",
+                "btn_href": "https://interactive-photo-booth.netlify.app/",
+                "btn_text": "See live page"
+            },
+            {
+                "title": "Supaykuna",
+                "img": "/img/supaykuna.png",
+                "img_alt": "Supaykuna Image",
+                "description": "Beat 'em up 2D adventure with pixel art that will take you to the Andean mythology and magical towns to collect kamaquen",
+                "btn_href": "https://toka404.itch.io/supaykuna",
+                "btn_text": "See itch.io page"
+            }
+        ]
+    }
+}

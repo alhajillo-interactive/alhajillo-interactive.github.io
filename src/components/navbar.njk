@@ -1,0 +1,12 @@
+{% set data = navbar[locale]%}
+
+<div class="container navbar">
+    <h1 style="color: transparent; position: absolute; pointer-events: none">
+        {{ title[lang]}}
+    </h1>
+    <nav>
+        <a href="#about">{{data.studio}}</a>
+        <a href="#portfolio">{{ data.projects }}</a>
+        <a href="#contact-us">{{ data.contact }}</a>
+    </nav>
+</div>

@@ -1,14 +1,25 @@
 {
-    "title": {
-        "en": "Hello",
-        "es": "Hola"
-    },
     "about": {
         "en": {
-            "test": "Test from about .json"
+            "title": "About us",
+            "description": "We are a small studio focused on developing interactive experiences thought technology,especially using websites and video-games as tools to unleash our creativity",
+            "form": {
+                "name": "Name",
+                "email": "Email",
+                "msg_placeholder": "Your message here",
+                "send_btn": "Send Message"
+            }
         },
         "es": {
-            "test": "Preba desde  about .json"
+            "title": "Sobre nosotros",
+            "description": "Somos un pequeño estudio enfocado en desarrollar experiencias interactivas atravez de la tecnología. especialmente usando sitios web y video-juegos como herramientas para liberar nuestra creatividad",
+            "based": "desde:",
+            "form": {
+                "name": "Nombre",
+                "email": "Email",
+                "msg_placeholder": "Su mensaje aquí",
+                "send_btn": "Enviar mensaje"
+            }
         }
     }
 }

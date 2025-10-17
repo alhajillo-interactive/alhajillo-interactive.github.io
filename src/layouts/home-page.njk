@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title[locale]}}</title>
-    <link rel="stylesheet" href="/src/css/app.css" />
+    <head>
+        <meta charset="utf-8" />
+        <title>{{title[locale]}}</title>
+        <link rel="stylesheet" href="/src/css/app.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+    </head>
+    <body>
+        <script type="module" src="/src/js/main.js"></script>
+        <canvas id="c"></canvas>
+        <div id="dom-3D"></div>
+        <script type="module" src="/src/js/page-scripts.js"></script>
+        {% include "components/language-selector.njk"%}
+        <div id="info">
+            {% include "components/navbar.njk" %}
+            <div class="swiper sections">
+                <div class="swiper-wrapper">
+                    <section class="swiper-slide" data-hash="about">
+                      {% include "components/about.njk"%}
+                    </section>
 
-</head>
-<body>
-    <script type="module" src="/src/js/page-scripts.js"></script>
-    <div class="language-picker">
-        <form action="" class="language-picker__form">
-            <select name="language-picker-select" id="language-picker-select" aria-label="Select your language">
-            <option lang="de" value="en" selected>EN</option>
-            <option lang="en" value="es">ES</option>
-            </select>
-        </form>
-    </div>
-    <div id="info">
-        <div class="container">
-            <h2>{{ title[locale] }}</h2>
-            <p>{{ about[locale].test }}</p>
+                    <section class="swiper-slide" data-hash="portfolio">
+                        {% include "components/projects.njk"%}
+                    </section>
+                    <section class="swiper-slide" data-hash="contact-us">
+                        {% include "components/contact.njk"%}
+                    </section>
+                </div>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
