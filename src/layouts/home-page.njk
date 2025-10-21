@@ -18,19 +18,17 @@
         {% include "components/language-selector.njk"%}
         <div id="info">
             {% include "components/navbar.njk" %}
-            <div class="swiper sections">
-                <div class="swiper-wrapper">
-                    <section class="swiper-slide" data-hash="about">
-                      {% include "components/about.njk"%}
-                    </section>
+            <div class="sections">
+                <section class="section-tab" data-hash="about">
+                    {% include "components/about.njk"%}
+                </section>
 
-                    <section class="swiper-slide" data-hash="portfolio">
-                        {% include "components/projects.njk"%}
-                    </section>
-                    <section class="swiper-slide" data-hash="contact-us">
-                        {% include "components/contact.njk"%}
-                    </section>
-                </div>
+                <section class="section-tab" data-hash="portfolio">
+                    {% include "components/projects.njk"%}
+                </section>
+                <section class="section-tab" data-hash="contact-us">
+                    {% include "components/contact.njk"%}
+                </section>
             </div>
         </div>
     </body>

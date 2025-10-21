@@ -10,7 +10,7 @@ import { SceneButton as SceneButton } from "./SceneButton";
 export class SceneManager {
     constructor(canvas, dom3dElement) {
         this.scene = new Scene();
-        this.scene.background = new Color("#1e2426");
+        this.scene.background = new Color("#5c7080");
         // camera
         const fov = 45;
         this.camera = new PerspectiveCamera(fov, window.innerWidth / window.innerHeight, 0.1, 2000);

@@ -77,3 +77,27 @@
         box-shadow: 0px 2px 5px 0px rgba(209, 197, 197, 0.685);
     }
 }
+.sections {
+    .section-tab {
+        display: none;
+        transform-origin: top center;
+    }
+    .section-tab.active {
+        display: block;
+        animation: fade-in 500ms;
+    }
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+        scale: 0.8;
+    }
+    50% {
+        transform: translateY(0);
+        scale: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}

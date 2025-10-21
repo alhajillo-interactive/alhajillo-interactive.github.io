@@ -20,12 +20,12 @@ function initCarousels() {
             slideShadows: false,
         },
     });
-    swiperSection = new Swiper(".swiper.sections", {
-        hashNavigation: {
-            watchState: true,
-        },
-        modules: [HashNavigation],
-    });
+    // swiperSection = new Swiper(".swiper.sections", {
+    //     hashNavigation: {
+    //         watchState: true,
+    //     },
+    //     modules: [HashNavigation],
+    // });
 }
 const PortfolioCarousel = {
     slideNext: () => {
