@@ -8,6 +8,30 @@
                 "email": "Email",
                 "msg_placeholder": "Your message here",
                 "send_btn": "Send Message"
+            },
+            "our_studio": {
+                "title": "Our studio",
+                "mission": "We want to enable companies and individuals to showcase their creativity and explore new ways to engage with content",
+                "highlights": [
+                    "Video games development: to unleash our ideas or create learning opportunities",
+                    "Websites: to showcase any idea in a new way",
+                    "Finalists in the GameJam+ 2024 -> Brasilia"
+                ]
+            },
+            "services": {
+                "title": "Services",
+                "items": [
+                    "Game development (2D, 3D, mobile, PC, console)",
+                    "Art and animation services",
+                    "Game design consultation",
+                    "Interactive websites development",
+                    "Virtual/augmented reality development (VR & AR)"
+                ]
+            },
+            "cta": {
+                "title": "Curious?",
+                "projects_btn": "See our projects",
+                "contact_btn": "Contact us"
             }
         },
         "es": {
@@ -19,6 +43,31 @@
                 "email": "Email",
                 "msg_placeholder": "Su mensaje aquí",
                 "send_btn": "Enviar mensaje"
+            },
+            "our_studio": {
+                "title": "Nuestro estudio",
+                "mission": "Nosotros queremos permitir que companías e individuos puedan mostrar su creatividad y explorar nuevas maneras de interactuar con el contenido",
+                "highlights": [
+                    "Video games development: to unleash our ideas or create learning opportunities",
+                    "Desarrollo de videojuegos: para soltar nuestras ideas o crear oportunidades de aprendizaje",
+                    "Sitios web: para mostrar cualquier idea de una manera nueva",
+                    "Finalistas de la GameJam+ 2024 -> Brasilia"
+                ]
+            },
+            "services": {
+                "title": "Servicios",
+                "items": [
+                    "Desarrollo de videojuegos (2D, 3D, móvil, PC, consolas)",
+                    "Arte y animación",
+                    "Consultoría de Diseño de videojuegos",
+                    "Desarrollo de sitios web interactivos",
+                    "Desarrollo de realidad virtual/aumentada (VR & AR)"
+                ]
+            },
+            "cta": {
+                "title": "Intrigado?",
+                "projects_btn": "Mira nuestros proyectos",
+                "contact_btn": "Contáctanos"
             }
         }
     }
