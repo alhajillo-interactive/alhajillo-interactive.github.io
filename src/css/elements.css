@@ -61,20 +61,32 @@
 .language-picker {
     position: fixed;
     top: 0;
-    right: 20%;
+    right: 16%;
+    right: max(1.2rem, calc((100% - 78ch) * 0.5 + 1.2rem));
     margin-top: 1rem;
+    z-index: 100;
 
-    label {
-        display: none;
+    svg {
+        width: 0.8rem;
+        height: 0.8rem;
     }
-    select {
+    label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
         background: var(--primary-clr-100);
         color: var(--primary-clr-700);
         border: none;
         border-radius: 5px;
-        padding: 0.25rem 0.5rem;
-        font-weight: bold;
+        padding: 0rem 0.35rem;
         box-shadow: 0px 2px 5px 0px rgba(209, 197, 197, 0.685);
+    }
+    select {
+        border: none;
+        font-weight: bold;
+        color: var(--primary-clr-700);
+        padding-block: 0.25rem;
+        padding-left: 0.25rem;
     }
 }
 .sections {
