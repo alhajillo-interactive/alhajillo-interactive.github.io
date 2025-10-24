@@ -137,3 +137,26 @@
     color: var(--primary-clr-700);
     border-radius: 22px 0px 42px 0px;
 }
+.footer {
+    background: var(--accent-clr2-400);
+    padding-block: 1rem;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-logo {
+        width: 3rem;
+        border-radius: 6px;
+    }
+    a {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 6px;
+        padding: 0.2rem;
+        transition: background 250ms ease;
+    }
+    a:hover {
+        background-color: var(--secondary-clr-400);
+    }
+}

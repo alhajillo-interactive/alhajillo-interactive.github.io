@@ -5,8 +5,9 @@
 :root {
     --primary-clr-100: #f0f0f0;
     --primary-clr-700: #1f2426;
-    --secondary-clr-400: #f74755;
+    --secondary-clr-400: #f0343d;
     --accent-clr-400: #8c7aab;
+    --accent-clr2-400: #5c7080;
     --shadow-clr-700: rgba(0, 0, 0, 0.15);
     --container-width: 78ch;
     --swiper-navigation-color: var(--primary-clr-100);
@@ -53,7 +54,8 @@ html {
     pointer-events: initial;
 }
 section {
-    margin-bottom: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
 }
 h1,
 h2,
@@ -69,6 +71,7 @@ h2 {
     width: fit-content;
     padding: 0.5em 1em;
     box-shadow: var(--shadow-clr-700) -1px 3px 10px;
+    margin-top: 3.2em;
     margin-bottom: 1.6em;
 }
 a {
