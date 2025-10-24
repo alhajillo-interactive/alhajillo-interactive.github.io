@@ -31,8 +31,6 @@
     padding: 0.5em 0.8em;
     border-radius: 6px;
     box-shadow: inset 0 0 5px 0px rgba(26, 159, 113, 0.656);
-
-    /* display: flex; */
 }
 .arcade-screen img {
     width: 50px;
@@ -47,6 +45,7 @@
     margin-left: 0.8em;
     border-radius: 1px;
     transition: all 200ms ease;
+    display: none;
 }
 .arcade-screen li::before {
     position: absolute;
@@ -55,6 +54,9 @@
 }
 .arcade-screen .current {
     background: greenyellow;
+}
+.arcade-screen .active {
+    display: block;
 }
 .arcade-screen li.current::before {
     content: ">";
@@ -66,9 +68,14 @@
     background: skyblue;
     box-shadow: 0 0 10px 0px rgba(135, 207, 235, 0.62);
 
-    border-radius: 1px;
+    height: 60px;
+    width: 200%;
+    margin-left: -50%;
+    margin-top: -25%;
+    scale: 0.5;
+    border-radius: 2px;
     list-style: none;
-    font-size: 4.5px;
+    font-size: 9px;
 }
 .arcade-buttons {
     display: flex;

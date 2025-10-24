@@ -80,6 +80,17 @@ export class ArcadeScreen {
     updateScreen(projectIndex) {
         this.projectsList.forEach((e, i) => {
             e.classList.toggle("current", i == projectIndex);
+            let isActive = false;
+            const maxProjects = 5;
+            const halfMaxProjects = Math.ceil(maxProjects / 2);
+            if (projectIndex <= halfMaxProjects) {
+                isActive = i < maxProjects;
+            } else if (projectIndex > this.projectsList.length - halfMaxProjects - 1) {
+                isActive = i > this.projectsList.length - maxProjects - 1;
+            } else {
+                isActive = Math.abs(i - projectIndex) < halfMaxProjects;
+            }
+            e.classList.toggle("active", isActive);
         });
         this.screenImg.src = this.projectsData[projectIndex].imgSrc;
         this.playBtn.href = this.projectsData[projectIndex].href;

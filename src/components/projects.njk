@@ -2,8 +2,8 @@
     <ul class="swiper-wrapper">
         {% for project in projects[locale] %}
         <li class="swiper-slide project-card">
-            <h3>{{project.title}}</h3>
             <img src="{{project.img}}" alt="{{project.img_alt}}" />
+            <h3>{{project.title}}</h3>
             <p>{{project.description}}</p>
             <a target="_blank" href="{{ project.btn_href}}">{{project.btn_text}}</a>
         </li>
