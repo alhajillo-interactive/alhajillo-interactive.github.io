@@ -3,7 +3,7 @@ export default class SectionTabs {
         this.sections = document.querySelector(".sections");
         this.tabs = this.sections.querySelectorAll(".section-tab");
     }
-    show(tabHash) {
+    show(tabHash, isFirstLoad = false) {
         let foundHash = false;
         tabHash = tabHash.replace("#", "");
         this.tabs.forEach((tab) => {
@@ -17,6 +17,8 @@ export default class SectionTabs {
         if (!foundHash) {
             this.tabs[0].classList.add("active");
         }
-        window.scroll({ top: 0, behavior: "smooth" });
+        if (!isFirstLoad) {
+            window.scroll({ top: 0, behavior: "smooth" });
+        }
     }
 }

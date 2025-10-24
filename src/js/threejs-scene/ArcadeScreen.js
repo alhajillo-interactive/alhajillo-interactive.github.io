@@ -38,6 +38,7 @@ export class ArcadeScreen {
 
         this.screenImg = document.createElement("img");
         this.screenImg.src = "/img/supaykuna.png";
+        this.screenImg.alt = "arcade screen img";
 
         arcadeScreen.appendChild(gamePanel);
         gamePanel.appendChild(this.screenImg);

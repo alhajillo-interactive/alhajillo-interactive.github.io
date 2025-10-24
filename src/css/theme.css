@@ -45,10 +45,8 @@ html {
     left: 0;
     width: 100%;
     z-index: 10;
-    display: block;
     color: var(--primary-clr-100);
     pointer-events: none;
-    /* padding-inline: 3rem; */
 }
 #info > * {
     pointer-events: initial;

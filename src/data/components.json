@@ -3,6 +3,10 @@
         "en": "Alhajillo Interactive",
         "es": "Alhajillo Interactivo"
     },
+    "meta_description": {
+        "en": "Alhajillo Interactive is a game dev studio located in Ecuador, we create games and interactive experiences using technology. Check our projects on this page",
+        "es": "Alhajillo Interactivo es un estudio de videojuegos basado en Ecuador, nosotros creamos juegos y experiencias interactivas usando tecnología. Revisa nuestros proyectos en esta página"
+    },
     "navbar": {
         "en": {
             "studio": "studio",
@@ -14,5 +18,6 @@
             "projects": "proyetos",
             "contact": "contacto"
         }
-    }
+    },
+    "hostname": "https://alhajillo-interactive.github.io/"
 }

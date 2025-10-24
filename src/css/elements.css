@@ -90,6 +90,7 @@
     }
 }
 .sections {
+    min-height: 50lvh;
     .section-tab {
         display: none;
         transform-origin: top center;
