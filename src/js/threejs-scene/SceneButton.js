@@ -4,6 +4,7 @@ export class SceneButton {
     constructor(scene, camera, canvas, buttonInfo) {
         this.pointer = new Vector2();
         this.raycaster = new Raycaster();
+        this.isDrag = false;
 
         this.callback = buttonInfo.callback;
         this.camera = camera;
@@ -16,9 +17,14 @@ export class SceneButton {
         this.object.rotation.set(...buttonInfo.rotation);
         scene.add(this.object);
 
-        this.canvas.addEventListener("click", this.onClick.bind(this));
+        // bind events
+        this.canvas.addEventListener("click", this._onClick.bind(this));
+        this.canvas.addEventListener("mousemove", this._onMouseMove.bind(this));
+        this.canvas.addEventListener("mousedown", this._onMouseDown.bind(this));
     }
-    onClick(event) {
+    _onClick(event) {
+        console.log("Click -> " + this.isDrag);
+        if (this.isDrag) return;
         // update pointer pos
         const rect = this.canvas.getBoundingClientRect();
         this.pointer.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
@@ -29,5 +35,11 @@ export class SceneButton {
         if (intersects.length > 0) {
             this.callback();
         }
+    }
+    _onMouseDown() {
+        this.isDrag = false;
+    }
+    _onMouseMove() {
+        this.isDrag = true;
     }
 }
