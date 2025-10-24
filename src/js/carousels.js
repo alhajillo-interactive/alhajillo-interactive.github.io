@@ -1,6 +1,8 @@
 import Swiper from "swiper";
-import { EffectCoverflow, HashNavigation } from "swiper/modules";
+import { EffectCoverflow, Navigation } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/effect-coverflow";
 
 let swiperSection, swiperPortfolio;
 function initCarousels() {
@@ -14,18 +16,18 @@ function initCarousels() {
                 spaceBetween: 64,
             },
         },
+
         effect: "coverflow",
-        modules: [EffectCoverflow],
+        modules: [EffectCoverflow, Navigation],
         coverflowEffect: {
             slideShadows: false,
+            scale: 0.8,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
         },
     });
-    // swiperSection = new Swiper(".swiper.sections", {
-    //     hashNavigation: {
-    //         watchState: true,
-    //     },
-    //     modules: [HashNavigation],
-    // });
 }
 const PortfolioCarousel = {
     slideNext: () => {

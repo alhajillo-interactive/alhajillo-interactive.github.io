@@ -23,7 +23,6 @@ export class SceneButton {
         this.canvas.addEventListener("mousedown", this._onMouseDown.bind(this));
     }
     _onClick(event) {
-        console.log("Click -> " + this.isDrag);
         if (this.isDrag) return;
         // update pointer pos
         const rect = this.canvas.getBoundingClientRect();

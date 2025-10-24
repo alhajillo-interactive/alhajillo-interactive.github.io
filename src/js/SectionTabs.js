@@ -6,7 +6,6 @@ export default class SectionTabs {
     show(tabHash) {
         let foundHash = false;
         tabHash = tabHash.replace("#", "");
-        console.log(tabHash);
         this.tabs.forEach((tab) => {
             if (tab.dataset.hash == tabHash) {
                 tab.classList.add("active");
